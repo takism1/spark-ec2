@@ -125,13 +125,7 @@ else
       fi
       ;;
     *)
-      if [[ "$HADOOP_MAJOR_VERSION" == "1" ]]; then
-        wget http://s3.amazonaws.com/spark-related-packages/spark-$SPARK_VERSION-bin-hadoop1.tgz
-      elif [[ "$HADOOP_MAJOR_VERSION" == "2" ]]; then
-        wget http://s3.amazonaws.com/spark-related-packages/spark-$SPARK_VERSION-bin-cdh4.tgz
-      else
-        wget http://s3.amazonaws.com/spark-related-packages/spark-$SPARK_VERSION-bin-hadoop2.4.tgz
-      fi
+      wget http://s3.amazonaws.com/philm.brandwatch/spark-$SPARK_VERSION-hadoop2.4.tgz
       if [ $? != 0 ]; then
         echo "ERROR: Unknown Spark version"
         return -1
