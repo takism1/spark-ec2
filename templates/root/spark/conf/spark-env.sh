@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
 export SPARK_LOCAL_DIRS="{{spark_local_dirs}}"
-export SPARK_JAVA_OPTS="-Dhadoop.tmp.dir=/mnt/ephemeral0/hadoop"
 
 # Standalone cluster options
 export SPARK_MASTER_OPTS="{{spark_master_opts}}"
