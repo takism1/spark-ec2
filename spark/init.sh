@@ -125,7 +125,7 @@ else
       fi
       ;;
     *)
-      wget http://s3.amazonaws.com/philm.brandwatch/spark-$SPARK_VERSION-hadoop2.4.tgz
+      wget http://philm.brandwatch.s3.amazonaws.com/spark-$SPARK_VERSION-hadoop2.4.tgz
       if [ $? != 0 ]; then
         echo "ERROR: Unknown Spark version"
         return -1
