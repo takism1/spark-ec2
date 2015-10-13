@@ -39,6 +39,8 @@ OTHER_MASTERS=`cat masters | sed '1d'`
 SLAVES=`cat slaves`
 SSH_OPTS="-o StrictHostKeyChecking=no -o ConnectTimeout=5"
 
+/root/spark-ec2/install-java-8.sh
+
 if [[ "x$JAVA_HOME" == "x" ]] ; then
     echo "Expected JAVA_HOME to be set in .bash_profile!"
     exit 1
